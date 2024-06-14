@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- saved from url=(0138)https://tasks.algorea.org/?taskId=92759922802470528&theme=coursera&sPlatform=algorea_backend&channelId=task-1075365359837522617&sLocale=en -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll;}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>France IOI Task Platform</title>
+    <link href="./bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="./submission-manager.min.css" type="text/css" rel="stylesheet">
+    <link href="./p.css" type="text/css" rel="stylesheet">
+    <link href="./taskPlatform.css" type="text/css" rel="stylesheet"><!-- TODO :: include from bebras-modules -->
+    <link href="./conceptViewer-1.0.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./css2" rel="stylesheet">
+    <style type="text/css">*[ng-cloak] { display: none !important; }</style>
+    <script type="text/javascript" src="./config.js.php"></script>
+
+    <script type="text/javascript" src="./require.js"></script>
+    <script type="text/javascript">
+var requireJsConfig = {
+  "waitSeconds" : 30,
+  "urlArgs": config.requireJSurlArgs,
+  "baseUrl": config.assetsUrl,
+  "paths": {
+    "ace": "bower_components/ace-builds/src-min-noconflict/ace",
+    "ace-c_cpp": "bower_components/ace-builds/src-min-noconflict/mode-c_cpp",
+    "prism": "pjs/p",
+
+    "angular": "bower_components/angular/angular.min",
+    "angular-bootstrap": "bower_components/angular-bootstrap/ui-bootstrap.min",
+    "angular-bootstrap-tpls": "bower_components/angular-bootstrap/ui-bootstrap-tpls.min",
+    "angular-bind-html-compile": "bower_components/angular-bind-html-compile/angular-bind-html-compile",
+    "angular-sanitize": "bower_components/angular-sanitize/angular-sanitize.min",
+    "angular-ui-ace": "bower_components/angular-ui-ace/ui-ace.min",
+
+    "display-helper": "displayHelper",
+
+    "blockly": "bower_components/bebras-modules/ext/blockly/blockly_compressed",
+    "blockly-blocks": "bower_components/bebras-modules/ext/blockly/blocks_compressed",
+    "blockly-javascript": "bower_components/bebras-modules/ext/blockly/javascript_compressed",
+    "blockly-python": "bower_components/bebras-modules/ext/blockly/python_compressed",
+    "blockly-fr": "bower_components/bebras-modules/ext/blockly/fr",
+    "blockly-en": "bower_components/bebras-modules/ext/blockly/en",
+    "fioi-blockly": "bower_components/bebras-modules/ext/blockly-fioi/fioi-blockly.min",
+
+    "scratch": "bower_components/bebras-modules/ext/scratch/blockly_compressed_vertical",
+    "scratch-blocks-common": "bower_components/bebras-modules/ext/scratch/blocks_compressed",
+    "scratch-blocks": "bower_components/bebras-modules/ext/scratch/blocks_compressed_vertical",
+    "scratch-fixes": "bower_components/bebras-modules/ext/scratch/fixes",
+    "scratch-procedures": "bower_components/bebras-modules/ext/scratch/procedures",
+
+    "blockly-switcher": "blockly-switcher",
+    "get-locale": "get-locale",
+
+    "quickalgo-i18n": "bower_components/bebras-modules/pemFioi/quickAlgo/i18n",
+    "quickalgo-utils": "bower_components/bebras-modules/pemFioi/quickAlgo/utils",
+    "quickalgo-blockly-blocks": "bower_components/bebras-modules/pemFioi/quickAlgo/blockly_blocks",
+    "quickalgo-blockly": "bower_components/bebras-modules/pemFioi/quickAlgo/blockly_interface",
+
+    "acorn": "bower_components/bebras-modules/ext/js-interpreter/acorn",
+    "acorn-walk": "bower_components/bebras-modules/ext/acorn/walk",
+
+    "save-svg-as-png": "bower_components/saveSvgAsPng/saveSvgAsPng",
+    "webvtt": "bower_components/webvtt/parser",
+    "fioi-video-player": "bower_components/bebras-modules/pemFioi/videoPlayer-1.0",
+    "concept-viewer": "bower_components/bebras-modules/pemFioi/conceptViewer-1.0",
+    "concept-viewer-blockly": "conceptViewer_blockly",
+
+    "bootstrap": "bower_components/bootstrap/dist/js/bootstrap.min",
+    "es5-shim": "bower_components/es5-shim/es5-shim.min",
+    "fioi-editor2": "bower_components/fioi-editor2/dist/fioi-editor2",
+    "jquery": "bower_components/jquery/dist/jquery.min",
+    "lodash": "bower_components/lodash/lodash.min",
+    "platform-pr": "bower_components/pem-task/platform-pr",
+    "miniPlatform": "bower_components/pem-task/miniPlatform",
+    "raphael": "bower_components/raphael/raphael-min",
+    "jschannel": "bower_components/jschannel/src/jschannel",
+    "submission-manager": "bower_components/submission-manager/dst/submission-manager.min",
+    "SoundManager2": "bower_components/SoundManager2/script/soundmanager2-jsmin",
+    "transloadit_xhr": "bower_components/transloadit_xhr/transloadit_xhr",
+
+    "i18next": "bower_components/i18next/i18next.min",
+    "i18next-xhr-backend": "bower_components/i18next-xhr-backend/i18nextXHRBackend.min",
+    "ng-i18next": "bower_components/ng-i18next/dist/ng-i18next.min"
+  },
+  "shim": {
+    "angular": {"exports": "angular"},
+    "angular-bind-html-compile": {"deps": ["angular"]},
+    "angular-bootstrap": {"deps": ["angular"]},
+    "angular-bootstrap-tpls": {"deps": ["angular-bootstrap"]},
+    "angular-sanitize": {"deps": ["angular"]},
+    "angular-ui-ace": {"deps": ["angular", "ace"]},
+
+    // Dependencies for blockly are managed by blockly-switcher, and loaded below
+    "blockly-blocks": {"deps": ["blockly"]},
+    "blockly-switcher": {"deps": ["get-locale"]},
+
+    "scratch-blocks-common": {"deps": ["scratch"]},
+    "scratch-blocks": {"deps": ["scratch", "scratch-blocks-common"]},
+
+    "quickalgo-i18n": {"deps": ["jquery"]},
+    "quickalgo-blockly-blocks": {"deps": ["quickalgo-i18n", "quickalgo-utils", "display-helper"]},
+    "quickalgo-blockly": {"deps": ["quickalgo-blockly-blocks", "quickalgo-i18n", "quickalgo-utils"]},
+    "fioi-editor2": {"deps": ["quickalgo-blockly", "jquery", "ng-i18next", "ace-c_cpp"]},
+
+    "fioi-video-player": {"deps": ["jquery", "webvtt"]},
+
+    "bootstrap": {"deps": ["jquery"]},
+    "platform-pr": {"deps": ["jquery", "jschannel"], "exports": "platform"},
+    "miniPlatform": {"deps": ["platform-pr"]},
+    "submission-manager": {"deps": ["jquery", "raphael", "angular", "bootstrap", "ng-i18next"]},
+    "transloadit_xhr": {"deps": ["jquery"]},
+
+    "i18next-xhr-backend": {"deps": ["i18next"]},
+    "ng-i18next": {"deps": ["i18next", "angular", "angular-sanitize"]}
+  }
+};
+requirejs.config(requireJsConfig);
+require([
+  'angular', 'angular-bootstrap', 'angular-bootstrap-tpls', 'angular-ui-ace',
+  'es5-shim', 'jquery', 'lodash', 'raphael',
+  'jschannel', 'platform-pr', 'angular-bind-html-compile',
+  'i18next', 'acorn',
+  'miniPlatform', 'get-locale', 'blockly-switcher'
+], function (angular) {
+  // TODO :: actual dependency tree
+  // Order of JS scripts loading; load blocklySwitcher dependencies first
+  // TODO :: optimize that a lot, really
+  var bsd = window.blocklySwitcher.dependencies;
+/*  function addScript(name, t) {
+    setTimeout(function() {
+    var url = requireJsConfig['paths'][name] || name;
+    url += '.js';
+    var el = document.createElement('script');
+    el.setAttribute('src', url);
+    document.head.appendChild(el);
+    }, t);
+  }
+  for(var i = 0 ; i < bsd.length; i++) {
+    var bsds = bsd[i];
+    if(typeof bsds !== 'string') {
+      for(var j = 0; j < bsds.length; j++) {
+        var bsdss = bsds[j];
+        addScript(bsdss, i*1000+j*100+1);
+      }
+    } else {
+      addScript(bsds, i*1000);
+    }
+  }*/
+  var scripts = bsd.concat([
+//     ["acorn-walk", "test"],
+    ["animation",
+     "commonFramework/modelsManager/modelsManager",
+     "ng-i18next",
+     "submission-manager",
+     "acorn-walk",
+     "prism"],
+     "shared/models",
+    ["commonFramework/sync/syncQueue"],
+    "taskController",
+    ["fioi-video-player",
+    "concept-viewer"],
+    ["pem-api",
+     "limits/directive",
+     "samples/directive",
+     "hints/directive",
+     "selectLang",
+     "showSource",
+     "concept-viewer-blockly"],
+    "miniPlatform",
+  ]);
+  function loadNext () {
+    if (scripts.length > 0) {
+      if(typeof scripts[0] === "string") {
+        return require([scripts.shift()], loadNext);
+      } else {
+        return require(scripts.shift(), loadNext);
+      }
+    }
+    window.angular.element(document).ready(function () {
+      window.angular.bootstrap(document, ['pemTask'], {strictDi: true});
+    });
+  }
+
+  setTimeout(function() {
+  require(['i18next'], function(i18next) {
+    window.i18next = i18next;
+    getLocale.getAngularLocale(loadNext);
+  });
+}, 1000);
+
+});
+    </script>
+    <style>
+      .readOnlySource .ace_cursor {
+         border-left:0px;
+      }
+      body {
+        margin-top:20px;
+        width: 764px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      #choose-view {
+        margin-left:auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        font-size:14pt;
+      }
+      #sourcesEditor {
+         margin-bottom:20px;
+      }
+      #testsEditor {
+         margin-bottom:20px;
+      }
+      #submission {
+         margin-top: 25px;
+      }
+      .hint {
+        margin-bottom: 10px;
+        margin-top: 20px;
+      }
+      .glyphicon.spinning {
+        animation: spin 2.3s infinite linear;
+        transform-origin: 48% 50%;
+      }
+      .readOnlySource {
+         margin-left: 30px;
+         margin-top:20px;
+         margin-bottom:20px;
+      }
+      .buttons-set {
+        margin-top:10px;
+        width:100%;
+        display:flex;
+        justify-content: center;
+      }
+      .btn-default {
+        margin-left:2px;
+        margin-right:2px;
+      }
+      .btn-info {
+        margin-left:2px;
+        margin-right:2px;
+      }
+      @keyframes spin {
+        from { transform: scale(1) rotate(0deg); }
+        to { transform: scale(1) rotate(360deg); }
+      }
+    </style>
+  <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="es5-shim" src="./es5-shim.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lodash" src="./lodash.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="raphael" src="./raphael-min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jschannel" src="./jschannel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="i18next" src="./i18next.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="acorn" src="./acorn.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="get-locale" src="./get-locale.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular" src="./angular.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ace" src="./ace.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="platform-pr" src="./platform-pr.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blockly-switcher" src="./blockly-switcher.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-bootstrap" src="./ui-bootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-bind-html-compile" src="./angular-bind-html-compile.js"></script><style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_editor.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-ui-ace" src="./ui-ace.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="miniPlatform" src="./miniPlatform.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-bootstrap-tpls" src="./ui-bootstrap-tpls.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blockly" src="./blockly_compressed.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blockly-blocks" src="./blocks_compressed.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blockly-javascript" src="./javascript_compressed.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blockly-python" src="./python_compressed.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blockly-en" src="./en.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fioi-blockly" src="./fioi-blockly.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="quickalgo-utils" src="./utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="display-helper" src="./displayHelper.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="quickalgo-i18n" src="./i18n.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="quickalgo-blockly-blocks" src="./blockly_blocks.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="quickalgo-blockly" src="./blockly_interface.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ace-c_cpp" src="./mode-c_cpp.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angular-sanitize" src="./angular-sanitize.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ng-i18next" src="./ng-i18next.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fioi-editor2" src="./fioi-editor2.js"></script><style type="text/css">.fioi-editor2{width:762px;background-color:#FFF}.fioi-editor2.fioi-editor2_fullscreen{position:absolute;top:0;left:0;width:100%;height:100%;padding:16px;z-index:50}ul.fioi-editor2_tabs{font:700 11px Verdana,Arial,sans-serif;list-style-type:none;padding-bottom:24px;border-bottom:1px solid #CCC;margin:0}ul.fioi-editor2_tabs>li{float:left;height:21px;line-height:21px;padding:0 7px;background-color:#E0F3DB;margin:2px 2px 0 2px;border:1px solid #CCC;cursor:pointer}ul.fioi-editor2_tabs>li.active{border-bottom:1px solid #fff;background-color:#FFF;color:#000}body.funtelecom ul.fioi-editor2_tabs>li{background-color:#0075B3;color:#FFF}body.funtelecom ul.fioi-editor2_tabs>li.active{background-color:#FFF;color:#000}ul.fioi-editor2_tabs>li:hover .fioi-editor2_tab-title{text-decoration:underline}.fioi-editor2_close-tab{padding:0 2px;margin-left:2px;border-radius:3px}.fioi-editor2_close-tab:hover{background-color:#D8D8D8}.fioi-editor2_buffers{width:100%;overflow:hidden}.fioi-editor2_empty{width:762px;border:1px solid #CCC;border-top:none;font-style:italic;padding:10px;color:#888}.fioi-editor2_buffers .ace_editor{height:350px;border:1px solid #CCC;border-top:none}.fioi-editor2_1-buffers .ace_editor{width:762px}.fioi-editor2_2-buffers .ace_editor{width:379px}.fioi-editor2_2-buffers>div{float:left}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="animation" src="./animation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="commonFramework/modelsManager/modelsManager" src="./modelsManager.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="acorn-walk" src="./walk.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="prism" src="./p.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="./bootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="submission-manager" src="./submission-manager.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="shared/models" src="./models.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="commonFramework/sync/syncQueue" src="./syncQueue.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="taskController" src="./taskController.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="concept-viewer" src="./conceptViewer-1.0.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="webvtt" src="./parser.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="fioi-video-player" src="./videoPlayer-1.0.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pem-api" src="./pem-api.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="limits/directive" src="./directive.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="samples/directive" src="./directive(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="hints/directive" src="./directive(2).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="selectLang" src="./selectLang.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="showSource" src="./showSource.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="concept-viewer-blockly" src="./conceptViewer_blockly.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="i18next-xhr-backend" src="./i18nextXHRBackend.min.js"></script></head>
+  <body ng-controller="taskController" ng-class="bodyClass" class="ng-scope coursera">
+    <div ng-hide="loadComplete" class="jumbotron text-center ng-hide">
+        <span style="font-size: 4em;" class="glyphicon glyphicon-refresh glyphicon-animate-spin"></span>
+    </div>
+    <div id="task" ng-show="loadComplete" class="" style="display: none;">
+       <h1 ng-bind-html="taskTitle" class="ng-binding"></h1>
+       <div dynamic-compile="taskContent"><p class="ng-scope">At the annual meeting of MOOC fans, participants register on the first day of the event in order to receive their name tags, brochures and banquet vouchers. Unfortunately this often results in long lines. In an attempt to speed things up, there are now two people working the registration desk: one person who has the registration materials for those fans whose names contain an odd number of letters, the other for those whose names have an even number of letters. Your job is to write a C-program that will tell a fan which line to stand in.</p>
+<p class="ng-scope">To simplify the program, you may assume that student names are less than 50 characters long and contain no spaces. Your program should output an integer value (1 or 2) depending on whether the fan should join line 1 (name has even number of letters) or line 2 (name has odd number of letters).</p>
+<p class="ng-scope">&nbsp;</p>
+<h3 class="ng-scope">Examples</h3>
+<h4 class="ng-scope">Input:</h4>
+<pre class="ng-scope">Sharrock</pre>
+<h4 class="ng-scope">Output:</h4>
+<pre class="ng-scope">1</pre>
+<p class="ng-scope">&nbsp;</p>
+<h4 class="ng-scope">Input:</h4>
+<pre class="ng-scope">Bonfert</pre>
+<h4 class="ng-scope">Output:</h4>
+<pre class="ng-scope">2</pre>
+<p class="ng-scope"><em>Warning</em>:&nbsp;You will be graded on your output, so do not include any print statements that prompt a user for input.</p>
+<h3 class="ng-scope">Note</h3>
+<p class="ng-scope">You may submit as many solutions as you wish. Only your highest score will be kept.</p></div>
+    </div>
+    <div id="editor" ng-show="loadComplete" class="" style="display: block;">
+      <!-- ngIf: !tm_task.bTestMode --><div id="sourcesEditor" ng-if="!tm_task.bTestMode" class="ng-scope">
+        <div id="fioi-editor2" ng-class="{&#39;fioi-editor2_fullscreen&#39;: vm.ownFullscreen}" class="fioi-editor2 ng-isolate-scope" fioi-editor2="{tabset: &#39;sources&#39;}"><ul class="fioi-editor2_tabs"><!-- ngRepeat: tab in vm.tabs track by tab.id --><li ng-repeat="tab in vm.tabs track by tab.id" ng-class="{&#39;active&#39;:tab.id===vm.tab.id}" ng-click="vm.selectTab(tab)" class="fioi-editor2_tab ng-scope active"><span class="fioi-editor2_tab-title ng-binding">Code1</span><span ng-click="vm.closeTab(tab, $event)" class="fioi-editor2_close-tab">×</span></li><!-- end ngRepeat: tab in vm.tabs track by tab.id --><li ng-click="vm.addTab()" ng-i18next="[title]editor_tab_addtab" class="fioi-editor2_new-tab" title="New file">+</li><li ng-click="vm.toggleHistory()" ng-i18next="[title]editor_tab_history" class="fioi-editor2_fullscreen" title="History"><span class="glyphicon glyphicon-time"></span></li><!-- ngIf: vm.isFullscreenAllowed() --><!-- ngIf: vm.hasConcepts --></ul><div ng-class="vm.buffersClasses" class="fioi-editor2_buffers fioi-editor2_1-buffers"><!-- ngIf: !vm.tab.buffers --><!-- ngRepeat: buffer in vm.tab.buffers track by buffer --><div ng-repeat="buffer in vm.tab.buffers track by buffer" class="ng-scope"><div buffer="b1" class="ng-isolate-scope"><!-- ngIf: vm.description != '' --><!-- ngIf: vm.isAce --><div ng-if="vm.isAce" class="ng-scope"><div ui-ace="{onLoad: vm.aceLoaded}" class=" ace_editor ace-tm" style="height: 350px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; height: 12px; width: 6.00031px; left: 50px; top: 0px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 373px; width: 46px;"><div class="ace_gutter-cell " style="height: 12px;">1</div><div class="ace_gutter-cell " style="height: 12px;">2</div><div class="ace_gutter-cell " style="height: 12px;">3</div><div class="ace_gutter-cell " style="height: 12px;">4<span class="ace_fold-widget ace_start ace_open" style="height: 12px;"></span></div><div class="ace_gutter-cell " style="height: 12px;">5</div><div class="ace_gutter-cell " style="height: 12px;">6</div><div class="ace_gutter-cell " style="height: 12px;">7</div><div class="ace_gutter-cell " style="height: 12px;">8</div><div class="ace_gutter-cell " style="height: 12px;">9</div><div class="ace_gutter-cell " style="height: 12px;">10<span class="ace_fold-widget ace_start ace_open" style="height: 12px;"></span></div><div class="ace_gutter-cell " style="height: 12px;">11</div><div class="ace_gutter-cell " style="height: 12px;">12</div><div class="ace_gutter-cell " style="height: 12px;">13</div><div class="ace_gutter-cell " style="height: 12px;">14</div><div class="ace_gutter-cell " style="height: 12px;">15</div><div class="ace_gutter-cell " style="height: 12px;">16<span class="ace_fold-widget ace_start ace_open" style="height: 12px;"></span></div><div class="ace_gutter-cell " style="height: 12px;">17</div><div class="ace_gutter-cell " style="height: 12px;">18</div><div class="ace_gutter-cell " style="height: 12px;">19</div><div class="ace_gutter-cell " style="height: 12px;">20<span class="ace_fold-widget ace_start ace_open" style="height: 12px;"></span></div><div class="ace_gutter-cell " style="height: 12px;">21</div><div class="ace_gutter-cell " style="height: 12px;">22</div><div class="ace_gutter-cell " style="height: 12px;">23</div><div class="ace_gutter-cell " style="height: 12px;">24</div></div><div class="ace_gutter-active-line" style="top: 0px; height: 12px;"></div></div><div class="ace_scroller" style="left: 46px; right: 0px; bottom: 0px;"><div class="ace_content" style="margin-top: 0px; width: 714px; height: 373px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 484.025px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:12px;top:0px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:12px"><span class="ace_keyword">#include</span><span class="ace_constant ace_other"> &lt;stdio.h&gt;</span></div><div class="ace_line" style="height:12px"></div><div class="ace_line" style="height:12px"><span class="ace_storage ace_type">int</span> <span class="ace_identifier">main</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height:12px"><span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:12px">    <span class="ace_storage ace_type">char</span> <span class="ace_identifier">word</span><span class="ace_paren ace_lparen">[</span><span class="ace_constant ace_numeric">50</span><span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:12px">    <span class="ace_support ace_function ace_C99 ace_c">scanf</span><span class="ace_paren ace_lparen">(</span><span class="ace_string ace_start">"</span><span class="ace_constant ace_language ace_escape">%s</span><span class="ace_string ace_end">"</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">word</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:12px">    <span class="ace_storage ace_type">int</span> <span class="ace_identifier">i</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">0</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:12px">    </div><div class="ace_line" style="height:12px">    <span class="ace_keyword ace_control">while</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">word</span><span class="ace_paren ace_lparen">[</span><span class="ace_identifier">i</span><span class="ace_paren ace_rparen">]</span> <span class="ace_keyword ace_operator">!=</span> <span class="ace_string">'\0'</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height:12px">    <span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:12px"><span class="ace_indent-guide">    </span>    <span class="ace_identifier">i</span><span class="ace_keyword ace_operator">++</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:12px">    <span class="ace_paren ace_rparen">}</span></div><div class="ace_line" style="height:12px">    </div><div class="ace_line" style="height:12px">    <span class="ace_storage ace_type">int</span> <span class="ace_identifier">decision</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">i</span> <span class="ace_keyword ace_operator">%</span> <span class="ace_constant ace_numeric">2</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:12px">    <span class="ace_keyword ace_control">if</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">decision</span><span class="ace_paren ace_rparen">)</span></div><div class="ace_line" style="height:12px">    <span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:12px"><span class="ace_indent-guide">    </span>    <span class="ace_support ace_function ace_C99 ace_c">printf</span><span class="ace_paren ace_lparen">(</span><span class="ace_string ace_start">"</span><span class="ace_string">2</span><span class="ace_constant ace_language ace_escape">\n</span><span class="ace_string ace_end">"</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:12px">    <span class="ace_paren ace_rparen">}</span></div><div class="ace_line" style="height:12px">    <span class="ace_keyword ace_control">else</span></div><div class="ace_line" style="height:12px">    <span class="ace_paren ace_lparen">{</span></div><div class="ace_line" style="height:12px"><span class="ace_indent-guide">    </span>    <span class="ace_support ace_function ace_C99 ace_c">printf</span><span class="ace_paren ace_lparen">(</span><span class="ace_string ace_start">"</span><span class="ace_string">1</span><span class="ace_constant ace_language ace_escape">\n</span><span class="ace_string ace_end">"</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:12px">    <span class="ace_paren ace_rparen">}</span></div><div class="ace_line" style="height:12px">    <span class="ace_keyword ace_control">return</span> <span class="ace_constant ace_numeric">0</span><span class="ace_punctuation ace_operator">;</span></div><div class="ace_line" style="height:12px"><span class="ace_paren ace_rparen">}</span></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 4px; top: 0px; width: 6.00031px; height: 12px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 20px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 20px; height: 288px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 20px; left: 46px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 20px; width: 760px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div></div><!-- end ngIf: vm.isAce --><!-- ngIf: vm.isBlockly --><!-- ngIf: vm.wrongBlockly --><!-- ngIf: vm.showLanguageSelector --><div id="langChangeModal" role="dialog" class="modal fade"><div role="document" class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span></button><h4 ng-i18next="editor_change_language" class="modal-title">Change language</h4></div><div class="modal-body"><div role="alert" class="alert alert-danger"><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span><span id="modalMsg"></span></div><p><i ng-i18next="editor_change_language_help">You can also create a new tab with the button "+" in the top left in order to keep your sources.</i></p></div><div class="modal-footer"><button data-dismiss="modal" ng-i18next="close" class="btn btn-default">Close</button><button id="btnConfirm" ng-click="vm.langConfirm()" ng-i18next="confirm" class="btn btn-danger">Confirm</button></div></div></div></div></div></div><!-- end ngRepeat: buffer in vm.tab.buffers track by buffer --></div></div>
+      </div><!-- end ngIf: !tm_task.bTestMode -->
+      <!-- ngIf: tm_task.bTestMode -->
+      <div class="alert ng-binding ng-hide" ng-class="sourceCommentStyle" ng-show="sourceComment" ng-bind-html="sourceComment"></div>
+      <div class="panel panel-default ng-hide" ng-show="tm_task.bUserTests">
+        <div class="panel-heading panel-collapsed" ng-click="togglePanel(&#39;userTests&#39;)" ng-class="panels.userTests ? &#39;panel-opened&#39; : &#39;panel-collapsed&#39;" ng-i18next="validate_test_heading">Test your program on your own tests</div>
+        <div class="panel-body ng-hide" ng-show="panels.userTests" style="padding-left: 3px; padding-right: 3px;">
+          <div id="testsEditor">
+            <div class="text-center" ng-i18next="validate_test_description">Before validating, test your program with your own input tests.</div>
+            <div id="fioi-editor2" ng-class="{&#39;fioi-editor2_fullscreen&#39;: vm.ownFullscreen}" class="fioi-editor2 ng-isolate-scope" fioi-editor2="{tabset:&#39;tests&#39;}"><ul class="fioi-editor2_tabs"><!-- ngRepeat: tab in vm.tabs track by tab.id --><li ng-click="vm.addTab()" ng-i18next="[title]editor_tab_addtab" class="fioi-editor2_new-tab" title="New file">+</li><li ng-click="vm.toggleHistory()" ng-i18next="[title]editor_tab_history" class="fioi-editor2_fullscreen" title="History"><span class="glyphicon glyphicon-time"></span></li><!-- ngIf: vm.isFullscreenAllowed() --><!-- ngIf: vm.hasConcepts --></ul><div ng-class="vm.buffersClasses" class="fioi-editor2_buffers fioi-editor2_empty"><!-- ngIf: !vm.tab.buffers --><div ng-if="!vm.tab.buffers" ng-i18next="editor_notabs" class="ng-scope">no tab</div><!-- end ngIf: !vm.tab.buffers --><!-- ngRepeat: buffer in vm.tab.buffers track by buffer --></div></div>
+          </div>
+          <div id="upper-buttons" class="buttons-set" ng-show="tm_task.bIsEvaluable">
+            <button ng-click="runCurrentTest();" ng-disabled="validateButtonDisabled" class="btn btn-default" ng-i18next="validate_test_current">Try on the current test</button>
+            <button ng-click="runAllTests();" ng-disabled="validateButtonDisabled" class="btn btn-default" ng-i18next="validate_test_all">Try on all my tests</button>
+          </div>
+          <div ng-show="hasExternalTest();" class="buttons-set ng-hide">
+            <br>
+            <input type="checkbox" ng-model="localUserTests" class="ng-pristine ng-untouched ng-valid"><span ng-i18next="validate_test_local">Step-by-step execution (in browser)</span>
+          </div>
+        </div>
+      </div>
+      <!-- ngIf: hasExternalTest(); -->
+      <div id="lower-buttons" class="buttons-set">
+        <!-- ngIf: tm_task.bIsEvaluable --><button ng-click="validateAnswer();" ng-if="tm_task.bIsEvaluable" ng-disabled="validateButtonDisabled" class="btn btn-info ng-scope" id="validate-button" ng-i18next="validate">Submit answer</button><!-- end ngIf: tm_task.bIsEvaluable -->
+      </div>
+      <!-- ngIf: validateMsg != '' -->
+      <!-- ngIf: tm_task.sDefaultEditorMode == 'expert' -->
+    </div>
+    <div id="submission" ng-show="loadComplete" class="" style="display: block;">
+      <div id="submission-visualization"></div>
+      <!-- ngIf: !submission --><div ng-if="!submission" ng-i18next="submission_none" class="ng-scope">Results of your next submission will appear here.</div><!-- end ngIf: !submission -->
+      <!-- ngIf: submission -->
+    </div>
+    <div id="solution" dynamic-compile="solutionContent" ng-show="loadComplete" class="" style="display: none;"><pre class=" ng-scope  language-c"><code class="  language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">51</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%s"</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>name<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> <span class="token string">'\0'</span><span class="token punctuation">)</span>
+        i<span class="token operator">++</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">%</span><span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> 
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">else</span> 
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+    <div id="hints" ng-show="loadComplete" class="" style="display: none;">
+       <!-- ngIf: tm_task && tm_task.nbHintsTotal --><div task-hints="" ng-if="tm_task &amp;&amp; tm_task.nbHintsTotal" class="ng-scope"><p class="ng-binding"><span ng-i18next="hint_title">This task offers</span> 1 <span ng-i18next="hint_hint">hint</span><!-- ngIf: nbHints > 1 --> :</p>
+<!-- ngRepeat: hint in hints -->
+<!-- ngIf: canAskHint --><button ng-click="askHint();" class="btn btn-info ng-scope" ng-if="canAskHint"><span ng-i18next="hint_ask">Request a hint</span> <span ng-show="hintLoading" class="glyphicon glyphicon-refresh spinning ng-hide"></span></button><!-- end ngIf: canAskHint -->
+</div><!-- end ngIf: tm_task && tm_task.nbHintsTotal -->
+    </div>
+    <div class="modal" id="adapterPopupModal" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 ng-i18next="local_test_ok">Test validated</h4>
+          </div>
+          <div class="modal-body">
+            <div ng-i18next="local_test_ok_description">The evaluation on the example tests succeeded. Do you want to Submit your answer?</div>
+            <div>
+              <button class="btn btn-primary" ng-i18next="validate" ng-click="adapterValidateAnswer();" data-dismiss="modal">Submit answer</button>
+              <button class="btn btn-default" ng-i18next="cancel" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+</div></body></html>

@@ -1,0 +1,1 @@
+var config = {"evalResultOutputScriptBaseUrl":"https:\/\/tasks.algorea.org\/evalScripts\/","assetsUrl":"https:\/\/tasks.algorea.org","requireJSurlArgs":"v=160","defaultLocale":"fr_fr","transloadit":{"key":"df5d38b0309f11e5842c77112e5efe35","template_id":"badcd25030a111e5a90921da194da5d0"}};
